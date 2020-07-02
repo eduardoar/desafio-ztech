@@ -1,0 +1,30 @@
+#spring:
+#  jpa:
+#    database: postgresql
+#    show-sql: false
+#    hibernate:
+#      ddl-auto: update
+#  datasource:
+#    driver-class-name: org.postgresql.Driver
+#    url: jdbc:postgresql://localhost:5432/desafio
+#    username: postgres
+#    password: admin
+
+spring:
+  jpa:
+    database: postgresql
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://${host}:${port}/${database}
+    username: ${username}
+    password: ${password}    
+
+#spring.datasource.driver-class-name=org.postgresql.Driver
+#spring.datasource.url=jdbc:postgresql://${host}:${port}/${database}
+#spring.datasource.username=${username}
+#spring.datasource.password=${password}
+
+
